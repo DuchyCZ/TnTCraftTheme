@@ -5,3 +5,86 @@
     Date: 24. 4. 2015
     Time: 13:20
 */
+
+body {
+    text-align: center;
+    background-size: cover;
+    font-family: "Calibri", "Calibri", sans-serif;
+    font-size: 15px;
+}
+
+div.container {
+    position: relative;
+
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    width: 1024px;
+
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    color: white;
+    text-align: left;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+article.post {
+    border-bottom: 2px dotted #bbbbbb;
+}
+
+article.post:last-of-type {
+    border-bottom: none;
+}
+
+article.post .head {
+    font-size: 19px;
+    padding-top: 8px;
+    text-decoration: underline;
+    color: #2ECCFA;
+}
+
+article.post .info {
+    font-size: 11px;
+    color: orange;
+}
+
+article.post .text {
+    padding-left: 10px;
+    margin: auto;
+}
+
+.sidebar {
+    position: relative;
+    border: 1px solid orange;
+    float: right;
+    margin: 5px 1px 3px 0px;
+    width: 350px;
+    padding: 5px;
+    font-size: 10px;
+}
+
+.sidebar .hlavni {
+    font-size: 13px;
+    padding: 2px;
+    text-decoration: underline;
+}
+
+p {
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #2ECCFA;
+}
+
+a:hover {
+    color: orange;
+}
+

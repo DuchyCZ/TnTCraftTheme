@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 <?php
 /**
  * Created by PhpStorm.
@@ -9,14 +8,28 @@
 
 get_header();
 
+?>
+<?php
 if (have_posts()) {
-    the_post();
+    while (have_posts()) {
+        the_post();
 
-    the_title();
-    the_content();
+        ?>
+        <article class="post">
+        <article class="head"><?php the_title(); ?></article>
+        <article class="info"><?php echo "Napsal: ";
+            the_author();
+            echo ", v: ";
+            the_time('G:i, F j Y'); ?></article>
+        <article class="text"><?php the_content(); ?></article>
+        </article><?php
+    }
 } else {
     echo "";
 }
+?>
+
+<?php
 
 get_footer();
 ?>
